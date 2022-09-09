@@ -6,10 +6,16 @@ The following pages provide build and software instructions for the Automated Sm
 
 This page provides a few thoughts about the project, while the links below contain information about how to build the microscope and run the software. 
 
+<center>![Printed microscope](images/P3257513.JPG)</center>
+
 #Instructions
 
 
 * [.](introduction.md){step}
 * [Bill of materials]{BOM}
 * [Purchasing parts](purchasing.md){step}
-
+* [Printing parts](printing.md){step}
+* [Assembling microscope](assembly.md){step}
+* [Raspberry Pi Software](raspberrypi.md){step}
+* [Android Software installation](androidinstallation.md){step}
+* [App instructions](appinstructions.md){step}
