@@ -6,6 +6,7 @@
 [28BYJ-48]:Parts.yaml#28BYJ-48
 [ULN2003]:Parts.yaml#ULN2003
 [No. 2 Phillips screwdriver]:Parts.yaml#Screwdriver_Philips_No2
+
 # Purchasing parts
 
 The microscope contains quite a few parts which are not printed. The majority of these parts are bolts and motors which can be purchased in sets on Amazon or eBay. Currently there are lots of bolts needed for the microscope - in future iterations the number of bolts may be reduced. 
@@ -14,14 +15,14 @@ The Raspberry Pi Zero 2 is currently (as of 2022) difficult to acquire. If you c
 
 ##Bolts
 
-* 16 x [M3x8 screws]{Qty: 16}: Used for fixing the stage together
-* 12 x [M4x10 screws]{Qty: 12}: Used for fixing the stage together
-* 1 x [M3x30 screws]{Qty: 1}: Used for Z-travel
-* 2 x [M6x130 screws]{Qty: 2}: Used for X and Y travel
+* [M3x8 screws]{Qty: 0}: For fixing the Raspberry Pi, motors and motor boards to the microscope 
+* [M4x10 screws]{Qty: 0}: For fixing various parts of the stage together
+* [M3x30 screws]{Qty: 0}: Used for Z-travel
+* [M6x130 screws]{Qty: 0}: Used for X and Y travel
 
 ##Motor electronics
-* 3x [28BYJ-48]{Qty: 3} Stepper motors
-* 3x [ULN2003]{Qty: 3} Motor driver board
+* 3x [28BYJ-48]{Qty: 0} Stepper motors
+* 3x [ULN2003]{Qty: 0} Motor driver board
 
 ##LED electronics
 * 1W White Star LED
@@ -36,6 +37,7 @@ The Raspberry Pi Zero 2 is currently (as of 2022) difficult to acquire. If you c
 ##Optics
 * 13mm diameter, 5mm focal length plastic condenser lens
 * RMS objective
+* Achromatic doublet tube lens (optional)
 
 ##Smartphone
 * This should be any modern Android smartphone

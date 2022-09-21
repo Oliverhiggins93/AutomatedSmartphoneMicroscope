@@ -1,18 +1,39 @@
+Plasticcondenser:
+    Name: Plastic condenser
+
+Jumperwires:
+    Name: Jumper wires
+
+RaspberyPi:
+    Name: Raspberry Pi Zero
+
+RaspberyPiCamera:
+    Name: Raspberry Pi HQ camera
+
+RaspberyPiCameraRibbon:
+    Name: Raspberry Pi HQ camera ribbon
+    Description: Ensure to use a ribbon compatible with a Pi Zero. 
 
 1WLED:
     Name: LED
+
 28BYJ-48:
     Name: Motor
+
 ULN2003:
     Name: Motor driver
 
+Shaftcouple3mm:
+    Name: Shaft Couple 3mm
+
+Shaftcouple6mm:
+    Name: Shaft Couple 6mm
+
 M6x130PanSteel:
     Name: M6x130 Hex Head Steel
+
 M3x8PanSteel:
     Name: M3x8 Pan Head Steel
-    Description: >
-        This is lots of text
-        about some screws?
     Specs:
         Head: Pan
         Length: 10 mm
@@ -26,8 +47,17 @@ M3x8PanSteel:
             PartNo: 90116A207
             Link: https://www.mcmaster.com/90116A207
 
-M3x30PanSteel:
+M3x30GHexSteel:
     Name: M3x8 Hex Head Steel
+
+M2.5x6:
+    Name: M2.5x6
+
+M3nut:
+    Name: M3 nut
+
+M6nut:
+    Name: M6 nut
 
 M4x10PanSteel:
     Name: M4x10 Pan Head Steel
