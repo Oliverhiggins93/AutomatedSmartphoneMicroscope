@@ -61,7 +61,7 @@
     </li>
 <li class="not-active">
     <a class="not-active" href="./assembly.html">
-        Assembling the microscope
+        Assembling the microscope 
     </a>
     </li>
 <li class="active">
@@ -85,7 +85,54 @@
         </div>
         <div class="wrapper">
     <h1 id="raspberry-pi-software">Raspberry Pi Software</h1>
-<p>Edit me</p>
+<p>A software image for the Raspberry Pi will be available soon which can be burned directly.  </p>
+<p>Currently the easiest way to set up your Raspberry Pi to stream to your smartphone is as follows:</p>
+<ul>
+<li>Flash your <a href="Parts/SDCard.html">SD card</a> with the latest version of Raspbian. </li>
+<li>Open a terminal window</li>
+<li>Clone the repository by running command:<ul>
+<li>cd ~</li>
+<li>git clone https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope.git</li>
+</ul>
+</li>
+<li>
+<p>Add the Raspberry Pi server script to rc.local to schedule running at startup. Typing the following in to the terminal:</p>
+<ul>
+<li>sudo nano /etc/rc.local</li>
+<li>Add the following line before "exit 0":<ul>
+<li>sudo python3 /~/AutomatedSmartphoneMicroscope/Raspberry_pi/stills_server.py &amp;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Add your phone hotspot as a WiFi connection to join:</p>
+<ul>
+<li>Open a terminal window and enter the following:<ul>
+<li>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</li>
+</ul>
+</li>
+<li>Copy-paste the following into the wpa_supplicant.conf file: </li>
+</ul>
+</li>
+</ul>
+<div class="info-block">
+<p>country=gb </br>
+update_config=1 </br>
+ctrl_interface=/var/run/wpa_supplicant </br></p>
+<p>network={ </br>
+scan_ssid=1 </br>
+ssid="microscope" <br>
+psk="smart" <br> 
+}</p>
+</div>
+<div class="caution-block">
+<p><strong>Security warning</strong></p>
+<p>Here we are suggesting to use a default SSID and password. This will mean that you will need to change the SSID of your phone so that the Raspberry Pi can pair to your phone. This is convenient because each smartphone user can change their hotspot ssid and password relatively quickly without having to interface with a screen. If you are worried about changing your smartphone's hotspot SSID and password to something that may be less secure, I would suggest you can change the ssid or psk field to the default for your smartphone. </p>
+</div>
+<ul>
+<li>Reboot. Upon reboot your Raspberry Pi will start looking to join the mobile hotspot of your smartphone, and as long as the camera has been correctly connected, the script will begin streaming images.</li>
+</ul>
 <hr />
 <p><a href="assembly.html">Previous page</a> | <a href="androidinstallation.html">Next page</a></p>
     </div>
@@ -96,7 +143,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2022 Oliver Higgins</p>
+    <p class="author">©2023 Oliver Higgins</p>
     <p class="email">Contact: <a href="mailto:oliver.higgins@glasgow.ac.uk">oliver.higgins@glasgow.ac.uk</a></p>
 
     </div>

@@ -10,7 +10,8 @@
 <link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
 
     <link href="./static/style.css" rel="stylesheet">
-        </head>
+            <script type="text/javascript" src="./static/3d-viewer.js"></script>
+    </head>
 <body>
 <header class="site-header">
     <div class="wrapper">
@@ -61,7 +62,7 @@
     </li>
 <li class="not-active">
     <a class="not-active" href="./assembly.html">
-        Assembling the microscope
+        Assembling the microscope 
     </a>
     </li>
 <li class="not-active">
@@ -85,7 +86,57 @@
         </div>
         <div class="wrapper">
     <h1 id="printing-parts">Printing parts</h1>
-<p>Download and print</p>
+<h2 class="page-step" id="download-the-parts">Step 1: Download the parts</h2>
+<p>To download the parts, you can either:</p>
+<ol>
+<li><strong>(Recommended)</strong> Clone the repository at <a href="https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope" target="_blank" title="">https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope</a>. All the parts will be located in the cloned folder, in "CAD models/42. Smartphone_inverted_small_v9/stl". </li>
+<li>Download the models from the page below by clicking on the links in the STL previews. </li>
+</ol>
+<h2 class="page-step" id="print-the-parts">Step 2: Print the parts</h2>
+<p>This is going to be quite a lengthy step, as the microscope requires quite a hefty amount of printing to complete. Each of the parts is designed to be printed on a basic PLA extrusion printer without support. Personally I have had good success printing the parts with a standard 0.4mm nozzle on an Ender 3 printer in PLA.</p>
+<p>Each of our microscopes have been sliced using the standard quality (0.2mm layer height, 20% infill) settings in Ultimaker Cura. The total print time for all parts was just under 40 hours and required several separate prints because of the size of the part footprint. </p>
+<p>The full list of all parts to print is as follows:</p>
+<ol>
+<li>Base (Bottom_carriage) x 1</li>
+</ol>
+<noscript><a href="stls/Bottom_carriage.stl">Base (Bottom_carriage)</a></noscript>
+<p><gb3d-viewer src="stls/Bottom_carriage.stl"></gb3d-viewer>
+2. Camera holder (Flexible_cam_holder) x 1</p>
+<noscript><a href="stls/Flexible_cam_holder_v7_HQ.stl">Camera holder (Flexible_cam_holder)</a></noscript>
+<p><gb3d-viewer src="stls/Flexible_cam_holder_v7_HQ.stl"></gb3d-viewer>
+3. Frame (160mm_shunt_box) x 1</p>
+<noscript><a href="stls/160mm_shunt_box.stl">Frame (160mm_shunt_box)</a></noscript>
+<p><gb3d-viewer src="stls/160mm_shunt_box.stl"></gb3d-viewer>
+4. Objective tube (Flexible_tube_bolster_fixed_v3) x 1</p>
+<noscript><a href="stls/Flexible_tube_bolster_fixed_v3.stl">Objective tube (Flexible_tube_bolster_fixed_v3)</a></noscript>
+<p><gb3d-viewer src="stls/Flexible_tube_bolster_fixed_v3.stl"></gb3d-viewer>
+5. X Stage base (Rail_stage_x_m6) x 1</p>
+<noscript><a href="stls/Rail_stage_x_m6_v2.stl">X Stage base (Rail_stage_x_m6)</a></noscript>
+<p><gb3d-viewer src="stls/Rail_stage_x_m6_v2.stl"></gb3d-viewer>
+6. X Stage top (Rail_carriage_v2) x 1 </p>
+<noscript><a href="stls/Rail_carriage_v2.stl">X Stage top (Rail_carriage_v2)</a></noscript>
+<p><gb3d-viewer src="stls/Rail_carriage_v2.stl"></gb3d-viewer>
+7. Y stage bottom (Rail_stage_y_v1.stl) x 1</p>
+<noscript><a href="stls/Rail_stage_y_v1.stl">Y stage bottom</a></noscript>
+<p><gb3d-viewer src="stls/Rail_stage_y_v1.stl"></gb3d-viewer>
+8. Y stage top (Rail_carriage_y_top_v2.stl) x 1</p>
+<noscript><a href="stls/Rail_carriage_y_top_v2.stl">Y stage top</a></noscript>
+<p><gb3d-viewer src="stls/Rail_carriage_y_top_v2.stl"></gb3d-viewer>
+9. Shaft couple 3mm (3mm_shaft_couple_sideclip_v4.stl) x 1</p>
+<noscript><a href="stls/3mm_shaft_couple_sideclip_v4.stl">Shaft couple 3mm</a></noscript>
+<p><gb3d-viewer src="stls/3mm_shaft_couple_sideclip_v4.stl"></gb3d-viewer>
+10. Shaft couple 6mm (6mm_shaft_couple_sideclip_v2.stl) x 2</p>
+<noscript><a href="stls/6mm_shaft_couple_sideclip_v2.stl">Shaft couple 6mm</a></noscript>
+<p><gb3d-viewer src="stls/6mm_shaft_couple_sideclip_v2.stl"></gb3d-viewer>
+11. LED frame (Led_frame_2_4mm.stl) x 1</p>
+<noscript><a href="stls/Led_frame_2_4mm.stl">LED frame</a></noscript>
+<p><gb3d-viewer src="stls/Led_frame_2_4mm.stl"></gb3d-viewer>
+12. Tube lens holder x 1</p>
+<noscript><a href="stls/Tube_lens_holder.stl">Tube lens holder</a></noscript>
+<p><gb3d-viewer src="stls/Tube_lens_holder.stl"></gb3d-viewer>
+13. Condenser holder frame (Condenser_holder_frame.stl) x 1</p>
+<noscript><a href="stls/Condenser_holder_frame.stl">Condenser holder</a></noscript>
+<p><gb3d-viewer src="stls/Condenser_holder_frame.stl"></gb3d-viewer></p>
 <hr />
 <p><a href="purchasing.html">Previous page</a> | <a href="assembly.html">Next page</a></p>
     </div>
@@ -96,7 +147,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2022 Oliver Higgins</p>
+    <p class="author">©2023 Oliver Higgins</p>
     <p class="email">Contact: <a href="mailto:oliver.higgins@glasgow.ac.uk">oliver.higgins@glasgow.ac.uk</a></p>
 
     </div>

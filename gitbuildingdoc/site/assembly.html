@@ -61,7 +61,7 @@
     </li>
 <li class="active">
     <a class="active" href="./assembly.html">
-        Assembling the microscope
+        Assembling the microscope 
     </a>
     </li>
 <li class="not-active">
@@ -85,7 +85,94 @@
         </div>
         <div class="wrapper">
     <h1 id="assembling-the-microscope">Assembling the microscope</h1>
-<p>Edit me</p>
+<h2 class="page-step" id="attaching-raspberry-pi-and-motor-drivers-to-base">Step 1: Attaching Raspberry pi and motor drivers to base</h2>
+<p>We will start by assembling the base of the microscope and attaching the electronic components. You will want to thread the bolts through the bottom of the base so that the threaded ends finish inside the microscopy body. </p>
+<p>Take the <a href="Parts/RaspberyPi.html">Raspberry Pi</a> and thread an <a href="Parts/M3x8PanSteel.html">M3 bolt</a> through the hole in each corners. Secure the <a href="Parts/RaspberyPi.html">Raspberry Pi</a> with the bolts and 4x <a href="Parts/M3nut.html">M3 nut</a>.</p>
+<p>Take the 3x <a href="Parts/ULN2003.html">ULN2003</a> motor drivers and attach these to the base in the same way with the <a href="Parts/M3x8PanSteel.html">M3 bolt</a>s. Secure with <a href="Parts/M3nut.html">M3 nut</a>.</p>
+<p>Using 2x <a href="Parts/M3x8PanSteel.html">M3 bolt</a> attach the <a href="Parts/28BYJ-48.html">28BYJ-48</a> by screwing bolts through the arms into the plastic holders. Secure with <a href="Parts/M3nut.html">M3 nut</a>.</p>
+<p><center><img alt="Base instructions" src="images/building/base.jpg" title="" /></center></p>
+<h2 class="page-step" id="motor-and-motor-driver-wiring">Step 2: Motor and motor driver wiring</h2>
+<p>Attach each <a href="Parts/28BYJ-48.html">28BYJ-48</a> header clip to the corresponding <a href="Parts/ULN2003.html">ULN2003</a> motor driver.</p>
+<p>We have had good success powering all of the motors using a simple parallel circuit from the 5V Raspberry Pi pin. Some resources online caution against this, due to concerns that the motors may drain more current than the 5V pin is rated to supply, but personally I have never found any difficulties with this, and it removes the requirement for an additional power source. </p>
+<p>Using <a href="Parts/Jumperwires.html">Jumper wires</a> attach each pin of the <a href="Parts/ULN2003.html">ULN2003</a> to the <a href="Parts/RaspberyPi.html">Raspberry Pi</a>. The pin order should be as follows:</p>
+<ul>
+<li>
+<p>X axis:</p>
+<ul>
+<li><strong>Motor pin 1</strong>: Raspberry Pi pin 18</li>
+<li><strong>Motor pin 2</strong>: Raspberry Pi pin 23</li>
+<li><strong>Motor pin 3</strong>: Raspberry Pi pin 24</li>
+<li><strong>Motor pin 4</strong>: Raspberry Pi pin 25</li>
+</ul>
+</li>
+<li>
+<p>Y axis:</p>
+<ul>
+<li><strong>Motor pin 1</strong>: Raspberry Pi pin 8</li>
+<li><strong>Motor pin 2</strong>: Raspberry Pi pin 7</li>
+<li><strong>Motor pin 3</strong>: Raspberry Pi pin 12</li>
+<li><strong>Motor pin 4</strong>: Raspberry Pi pin 16</li>
+</ul>
+</li>
+<li>
+<p>Z axis:</p>
+<ul>
+<li><strong>Motor pin 1</strong>: Raspberry Pi pin 4</li>
+<li><strong>Motor pin 2</strong>: Raspberry Pi pin 17</li>
+<li><strong>Motor pin 3</strong>: Raspberry Pi pin 27</li>
+<li><strong>Motor pin 4</strong>: Raspberry Pi pin 22</li>
+</ul>
+</li>
+</ul>
+<p>Please note, if your motors do not move when you test them, you should try to swap motor pin 2 and 3 for each driver. </p>
+<h2 class="page-step" id="attaching-screw-couplings-to-motors">Step 3: Attaching screw couplings to motors</h2>
+<p>There are three screw couples; 2x <a href="Parts/Shaftcouple6mm.html">6mm bolt coupler</a> and 1x <a href="Parts/Shaftcouple3mm.html">3mm bolt coupler</a> which are used to attach the <a href="Parts/M3x30GHexSteel.html">M3x30mm bolt</a> and M6 bolts to the <a href="Parts/28BYJ-48.html">28BYJ-48</a> motors.</p>
+<p>To assemble the screw couplings you should first screw a spare nut all the way along the length of the screw, so that it is flush (or close to flush) with the hex head. You can then insert the hex head into the hexagonal hole in the screw coupler. The nut will help the screw to stay in place in the coupler. </p>
+<p>You can then push the shaft of the <a href="Parts/28BYJ-48.html">28BYJ-48</a> into the rectangular hole of the screw coupler. </p>
+<p>Once these steps have been completed you should insert 2x <a href="Parts/M3x8PanSteel.html">M3 bolt</a> into the holes in the side to secure the bolt and shaft from moving. Secure with <a href="Parts/M3nut.html">M3 nut</a>.</p>
+<p><center><img alt="Screw coupler" src="images/building/screwcouple.png" title="" /></center></p>
+<h2 class="page-step" id="assembling-z-stage">Step 4: Assembling Z stage</h2>
+<p>Insert an <a href="Parts/M3nut.html">M3 nut</a> into the flexible camera holder. </p>
+<p><center><img alt="Camera holder" src="images/building/flex_nut.png" title="" /></center></p>
+<h2 class="page-step" id="attaching-camera-to-z-stage">Step 5: Attaching camera to Z stage</h2>
+<p>Using 4x <a href="Parts/M2.5x6.html">M2.5x6mm bolt</a> Screw the camera onto the flexible holder.</p>
+<p><center><img alt="Camera holder" src="images/building/flex_camera.png" title="" /></center></p>
+<p>You will now need to attach the <a href="Parts/RaspberyPiCameraRibbon.html">Camera ribbon</a>. One end of the camera ribbon will attach to the Raspberry Pi Zero, and the other end will attach to the camera.</p>
+<h2 class="page-step" id="attaching-frame-and-z-stage-to-base">Step 6: Attaching frame and Z stage to base</h2>
+<p>Use 4x <a href="Parts/M4x10PanSteel.html">M4x10mm bolt</a> to attach the frame to the base. The bolts should screw through the four central holes in the frame, through the camera holder, and into the base. </p>
+<p><center><img alt="Camera holder" src="images/building/frametobase.png" title="" /></center></p>
+<h2 class="page-step" id="attaching-objective-tube-to-camera-holder">Step 7: Attaching objective tube to camera holder</h2>
+<p>Use 4x <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a> to attach the objective tube to the camera holder. The bolts screw through the four holes in the bottom of the objective tube arms and into the holes in the camera holder.</p>
+<p><center><img alt="Camera holder" src="images/building/flexibleobjective.png" title="" /></center></p>
+<h2 class="page-step" id="attaching-xy-stage-bottom-to-objective-holder">Step 8: Attaching XY stage bottom to objective holder</h2>
+<p>Use 4x <a href="Parts/M4x10PanSteel.html">M4x10mm bolt</a> to attach the X stage bottom to the objective holder.</p>
+<p>Slide the X carriage top into the X stage bottom. This should slide directly in, but you may need to slightly bend the part to get the nut holder over the frame.</p>
+<p>Insert an <a href="Parts/M6nut.html">M6 nut</a> into the X carriage. </p>
+<p><center><img alt="Camera holder" src="images/building/xcarriage.png" title="" /></center></p>
+<h2 class="page-step" id="assembling-y-stage">Step 9: Assembling Y stage</h2>
+<p>Use 4x <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a> to attach the Y stage bottom to the X stage top.</p>
+<p>Insert a 2x <a href="Parts/M6x130PanSteel.html">M6x130mm bolt</a> into the X and Y stages through the holes in the side of the stage carriages. </p>
+<p><center><img alt="Camera holder" src="images/building/ycarriagem6.png" title="" /></center></p>
+<h2 class="page-step" id="attaching-motors-y-stage">Step 10: Attaching motors Y stage</h2>
+<p>Use 4x <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a> to attach the <a href="Parts/28BYJ-48.html">28BYJ-48</a> motors to the stage.</p>
+<p>Slide the Y stage top into the stage. You may need to bend the stage slightly to get the part into the frame. </p>
+<p>Insert a <a href="Parts/M6nut.html">M6 nut</a> into the Y carriage.</p>
+<p><center><img alt="Camera holder" src="images/building/ycarriagemotors.png" title="" /></center></p>
+<h2 class="page-step" id="insert-objective">Step 11: Insert objective</h2>
+<p>If you are using the <a href="Parts/tubelens.html">Tube lens</a>, you should insert this into the Tube lens holder. You can then use 1x <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a> inserted into the side of the objective holder to hold the tube lens in place. </p>
+<p>Insert the <a href="Parts/rmsobjective.html">RMS objective</a> into the objective holder. It should fit easily in place, but can be held in place using an <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a>.</p>
+<p><center><img alt="Camera holder" src="images/building/objective.png" title="" /></center></p>
+<h2 class="page-step" id="prepare-illumination-arm">Step 12: Prepare illumination arm</h2>
+<p>Glue the <a href="Parts/1WLED.html">White LED</a> onto the illumination frame in the central recess.</p>
+<p>Insert the <a href="Parts/Plasticcondenser.html">Condenser lens</a> into the condenser holder.</p>
+<p>You should prepare the circuit by soldering a 100 ohm <a href="Parts/resistor.html">Resistor</a> to 2x <a href="Parts/Jumperwires.html">Jumper wires</a>. The jumper wire attached to the positive terminal of the LED should be attached to the 5V pin of the Raspberry Pi. The jumper wire attached to the negative terminal of the LED should be attached to one of the ground pins of the Raspberry Pi. </p>
+<p>Using 2x <a href="Parts/M3x8PanSteel.html">M3x8mm bolt</a>, screw the condenser holder onto the illumination frame.</p>
+<p><center><img alt="Camera holder" src="images/building/ledcondenser.png" title="" /></center></p>
+<h2 class="page-step" id="attach-illumination-arm">Step 13: Attach illumination arm</h2>
+<p>Use 4x <a href="Parts/M4x10PanSteel.html">M4x10mm bolt</a> to attach the illumination frame to the microscope stage.</p>
+<p><center><img alt="Camera holder" src="images/building/ledframe.png" title="" /></center></p>
+<h2 class="page-step" id="congratulations">Step 14: Congratulations!</h2>
+<p>Well done, you have successfully built a microscope! Continue to the next steps for information about using the software.</p>
 <hr />
 <p><a href="printing.html">Previous page</a> | <a href="raspberrypi.html">Next page</a></p>
     </div>
@@ -96,7 +183,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2022 Oliver Higgins</p>
+    <p class="author">©2023 Oliver Higgins</p>
     <p class="email">Contact: <a href="mailto:oliver.higgins@glasgow.ac.uk">oliver.higgins@glasgow.ac.uk</a></p>
 
     </div>

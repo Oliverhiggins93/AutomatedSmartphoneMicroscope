@@ -61,7 +61,7 @@
     </li>
 <li class="not-active">
     <a class="not-active" href="./assembly.html">
-        Assembling the microscope
+        Assembling the microscope 
     </a>
     </li>
 <li class="not-active">
@@ -85,7 +85,29 @@
         </div>
         <div class="wrapper">
     <h1 id="android-app-software">Android app software</h1>
-<p>Edit me</p>
+<h2 class="page-step" id="pair-raspberry-pi-with-phone">Step 1: Pair Raspberry Pi with phone</h2>
+<p>For starters you will need to make sure that the Raspberry Pi can connect to the smartphone's mobile hotspot. If you used the default SSID and password settings in the previous settings you should only need to change the smartphone's hotspot settings to match the ones that the Raspberry Pi will be expecting to connect to: </p>
+<ul>
+<li>Network name (SSID) = microscope</li>
+<li>Password = smart </li>
+</ul>
+<p>Usually this can be done through settings. If you search for Mobile Hotspot in your device's search function it will usually take you to a page where you can switch the hotspot on and change the Network name/SSID and password.</p>
+<p>You will want to check at this stage that the Raspberry Pi is connected to your mobile hotspot. Usually under the mobile hotspot settings there will be some information telling you which devices are connected. </p>
+<h2 class="page-step" id="download-android-studio">Step 2: Download Android Studio</h2>
+<p>Download and install Android Studio from the following website: <a href="https://developer.android.com/studio" target="_blank" title="">Android studio</a></p>
+<h2 class="page-step" id="import-app-into-android-studio-and-install">Step 3: Import app into android studio and install</h2>
+<p>Open Android Studio once it is downloaded and installed. </p>
+<p>If you have not yet cloned the repository, you will want to do that now using:</p>
+<blockquote>
+<p>git clone https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope.git</p>
+</blockquote>
+<p>In Android Studio, open the project by opening the File dropdown and selection Open </p>
+<p><center><img alt="Base instructions" src="images/install/open.png" title="" /></center></p>
+<p>You will need to open the folder entitled 'Smartmicroscope'.</p>
+<p><center><img alt="Base instructions" src="images/install/openproject.png" title="" /></center></p>
+<p>Once this is open you should build and install the app. </p>
+<h2 class="page-step" id="run-app">Step 4: Run app</h2>
+<p>You can now run the app from the phone. The most important thing to check at this stage is whether you can receive an image. By clicking on 'Open Web Camera' you should soon begin to see an image stream to your device.</p>
 <hr />
 <p><a href="raspberrypi.html">Previous page</a> | <a href="appinstructions.html">Next page</a></p>
     </div>
@@ -96,7 +118,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2022 Oliver Higgins</p>
+    <p class="author">©2023 Oliver Higgins</p>
     <p class="email">Contact: <a href="mailto:oliver.higgins@glasgow.ac.uk">oliver.higgins@glasgow.ac.uk</a></p>
 
     </div>
