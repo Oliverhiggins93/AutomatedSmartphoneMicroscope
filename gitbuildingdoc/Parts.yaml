@@ -14,8 +14,22 @@ RaspberyPiCameraRibbon:
     Name: Raspberry Pi HQ camera ribbon
     Description: Ensure to use a ribbon compatible with a Pi Zero. 
 
+SDCard:
+    Name: SD Card
+    Description: Ensure atleast 8GB. 
+
 1WLED:
     Name: LED
+
+resistor:
+    Name: 100 ohm resistor
+
+rmsobjective:
+    Name: RMS threaded objective
+
+tubelens:
+    Name: Optional tube lens
+
 
 28BYJ-48:
     Name: Motor

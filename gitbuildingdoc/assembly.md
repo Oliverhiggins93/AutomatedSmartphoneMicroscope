@@ -15,9 +15,10 @@
 [M4x10mm bolt]:Parts.yaml#M4x10PanSteel
 [Condenser lens]:Parts.yaml#Plasticcondenser
 [White LED]:Parts.yaml#1WLED
-[resistor]:Parts.yaml#resistor
+[Resistor]:Parts.yaml#resistor
 [RMS objective]:Parts.yaml#rmsobjective
 [Tube lens]:Parts.yaml#tubelens
+[Camera ribbon]:Parts.yaml#RaspberyPiCameraRibbon
 
 # Assembling the microscope 
 
@@ -25,11 +26,11 @@
 
 We will start by assembling the base of the microscope and attaching the electronic components. You will want to thread the bolts through the bottom of the base so that the threaded ends finish inside the microscopy body. 
 
-Take the [Raspberry Pi]{Qty:1} and thread an [M3 bolt]{Qty: 4} through the hole in each corners. Secure the [Raspberry Pi] with the bolts.
+Take the [Raspberry Pi]{Qty: 1} and thread an [M3 bolt]{Qty: 4} through the hole in each corners. Secure the [Raspberry Pi] with the bolts and 4x [M3 nut]{Qty: 4}.
 
-Take the 3x [ULN2003]{Qty:3} motor drivers and attach these to the base in the same way with the [M3 bolt]{Qty: 12}s.
+Take the 3x [ULN2003]{Qty: 3} motor drivers and attach these to the base in the same way with the [M3 bolt]{Qty: 12}s. Secure with [M3 nut]{Qty: 12}.
 
-Using 2x [M3 bolt]{Qty:2} attach the [28BYJ-48]{Qty:1} by screwing bolts through the arms into the plastic holders.
+Using 2x [M3 bolt]{Qty: 2} attach the [28BYJ-48]{Qty: 1} by screwing bolts through the arms into the plastic holders. Secure with [M3 nut]{Qty: 2}.
 
 <center>![Base instructions](images/building/base.jpg)</center>
 
@@ -68,9 +69,9 @@ There are three screw couples; 2x [6mm bolt coupler]{Qty:2} and 1x [3mm bolt cou
 
 To assemble the screw couplings you should first screw a spare nut all the way along the length of the screw, so that it is flush (or close to flush) with the hex head. You can then insert the hex head into the hexagonal hole in the screw coupler. The nut will help the screw to stay in place in the coupler. 
 
-You can then push the shaft of the [28BYJ-48] into the rectangular hole of the screw coupler. 
+You can then push the shaft of the [28BYJ-48]{Qty: 2} into the rectangular hole of the screw coupler. 
 
-Once these steps have been completed you should insert 2x [M3 bolt]{Qty:2} into the holes in the side to secure the bolt and shaft from moving. 
+Once these steps have been completed you should insert 2x [M3 bolt]{Qty:2} into the holes in the side to secure the bolt and shaft from moving. Secure with [M3 nut]{Qty: 2}.
 
 <center>![Screw coupler](images/building/screwcouple.png)</center>
 
@@ -86,7 +87,7 @@ Using 4x [M2.5x6mm bolt]{Qty: 4} Screw the camera onto the flexible holder.
 
 <center>![Camera holder](images/building/flex_camera.png)</center>
 
-You will now need to attach the camera ribbon. One end of the camera ribbon will attach to the Raspberry Pi Zero, and the other end will attach to the camera.
+You will now need to attach the [Camera ribbon]{Qty: 1}. One end of the camera ribbon will attach to the Raspberry Pi Zero, and the other end will attach to the camera.
 
 ## Attaching frame and Z stage to base {pagestep}
 
@@ -128,7 +129,6 @@ Insert a [M6 nut]{Qty: 1} into the Y carriage.
 
 <center>![Camera holder](images/building/ycarriagemotors.png)</center>
 
-
 ## Insert objective {pagestep}
 
 If you are using the [Tube lens], you should insert this into the Tube lens holder. You can then use 1x [M3x8mm bolt]{Qty: 1} inserted into the side of the objective holder to hold the tube lens in place. 
@@ -137,14 +137,13 @@ Insert the [RMS objective]{Qty: 1} into the objective holder. It should fit easi
 
 <center>![Camera holder](images/building/objective.png)</center>
 
-
 ## Prepare illumination arm {pagestep}
 
 Glue the [White LED] onto the illumination frame in the central recess.
 
 Insert the [Condenser lens]{Qty: 1} into the condenser holder.
 
-You should prepare the circuit by soldering a 100 ohm [resistor]{Qty: 1} to 2x [Jumper wires]{Qty: 2}. The jumper wire attached to the positive terminal of the LED should be attached to the 5V pin of the Raspberry Pi. The jumper wire attached to the negative terminal of the LED should be attached to one of the ground pins of the Raspberry Pi. 
+You should prepare the circuit by soldering a 100 ohm [Resistor]{Qty: 1} to 2x [Jumper wires]{Qty: 2}. The jumper wire attached to the positive terminal of the LED should be attached to the 5V pin of the Raspberry Pi. The jumper wire attached to the negative terminal of the LED should be attached to one of the ground pins of the Raspberry Pi. 
 
 Using 2x [M3x8mm bolt]{Qty: 2}, screw the condenser holder onto the illumination frame.
 

@@ -15,14 +15,14 @@ The Raspberry Pi Zero 2 is currently (as of 2022) difficult to acquire. If you c
 
 ##Bolts
 
-* [M3x8 screws]{Qty: 0}: For fixing the Raspberry Pi, motors and motor boards to the microscope 
-* [M4x10 screws]{Qty: 0}: For fixing various parts of the stage together
-* [M3x30 screws]{Qty: 0}: Used for Z-travel
-* [M6x130 screws]{Qty: 0}: Used for X and Y travel
+* [M3x8 bolts]: For fixing the Raspberry Pi, motors and motor boards to the microscope 
+* [M4x10 bolts]: For fixing various parts of the stage together
+* [M3x30 bolts]: Used for Z-travel
+* [M6x130 bolts]: Used for X and Y travel
 
 ##Motor electronics
-* 3x [28BYJ-48]{Qty: 0} Stepper motors
-* 3x [ULN2003]{Qty: 0} Motor driver board
+* 3x [28BYJ-48] Stepper motors
+* 3x [ULN2003] Motor driver board
 
 ##LED electronics
 * 1W White Star LED

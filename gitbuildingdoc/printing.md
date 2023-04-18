@@ -4,7 +4,9 @@
 
 To download the parts, you can either:
 
-1. Clone the repository at [https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope]
+1. **(Recommended)** Clone the repository at [https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope](https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope). All the parts will be located in the cloned folder, in "CAD models/42. Smartphone_inverted_small_v9/stl". 
+2. Download the models from the page below by clicking on the links in the STL previews. 
+
 
 ## Print the parts {pagestep}
 This is going to be quite a lengthy step, as the microscope requires quite a hefty amount of printing to complete. Each of the parts is designed to be printed on a basic PLA extrusion printer without support. Personally I have had good success printing the parts with a standard 0.4mm nozzle on an Ender 3 printer in PLA.
@@ -35,3 +37,7 @@ The full list of all parts to print is as follows:
 ![Shaft couple 6mm](stls/6mm_shaft_couple_sideclip_v2.stl){previewpage}
 11. LED frame (Led_frame_2_4mm.stl) x 1
 ![LED frame](stls/Led_frame_2_4mm.stl){previewpage}
+12. Tube lens holder x 1
+![Tube lens holder](stls/Tube_lens_holder.stl){previewpage}
+13. Condenser holder frame (Condenser_holder_frame.stl) x 1
+![Condenser holder](stls/Condenser_holder_frame.stl){previewpage}

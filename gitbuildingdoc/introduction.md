@@ -12,6 +12,4 @@ There are a few differences between this project and the OpenFlexure Microscope.
 
 #Should I build this microscope, or the OpenFlexure microscope? 
 
-The OpenFlexure microscope is a much more mature project than ours. Their software is more flexible, the microscope is easier to use by hand, and it contains instructions for several different imaging modalities and applications. If you have never built a 3D-printed microscope before, I may suggest looking at their project first. 
-
-If you need to scan a large area of a slide quickly, or you are interested specifically in the problem of scanning Kato-Katz slides, then this microscope may be useful to you. 
+The OpenFlexure microscope is a much more mature project than ours, so I would definitely recommend checking out their documentation if you are considering which to build. If you need to scan a large area, or you are interested specifically in the problem of scanning Kato-Katz slides, then this microscope may be useful to you. 
