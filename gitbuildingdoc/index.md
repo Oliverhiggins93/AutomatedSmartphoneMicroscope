@@ -6,6 +6,8 @@ The following pages provide build and software instructions for the Automated Sm
 
 This page provides a few thoughts about the project, while the links below contain information about how to build the microscope and run the software. 
 
+[Github page](https://github.com/Oliverhiggins93/AutomatedSmartphoneMicroscope)
+
 <center>![Printed microscope](images/P3257513.JPG)</center>
 
 #Instructions

@@ -9,7 +9,3 @@ Much of the inspiration from this project comes from the OpenFlexure Microscope,
 [OpenFlexure webpage](https://openflexure.org/).
 
 There are a few differences between this project and the OpenFlexure Microscope. The primary differences are that our microscope does not use flexure for the X and Y movement, and that our control software uses a separate app on the smartphone rather than using the Raspberry Pi directly. The decision to move away from flexures was to try to increase the speed and range of movement for the X and Y dimensions, which we hoped would allow us to scan large samples more quickly. The use of a smartphone was to try to remove the need for additional screens and peripherals (such as keyboards and mice) to keep the microscope device highly portable. 
-
-#Should I build this microscope, or the OpenFlexure microscope? 
-
-The OpenFlexure microscope is a much more mature project than ours, so I would definitely recommend checking out their documentation if you are considering which to build. If you need to scan a large area, or you are interested specifically in the problem of scanning Kato-Katz slides, then this microscope may be useful to you. 
