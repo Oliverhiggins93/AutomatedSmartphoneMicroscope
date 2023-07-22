@@ -1,2 +1,0 @@
-# RMS threaded objective
-
