@@ -1,0 +1,7 @@
+label
+trichuris
+ascaris
+taenia
+s.mansoni_egg
+hookworm
+hymenolepis

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "910022415819",
+    "firebase_url": "https://smartmicroscope-c3a92.firebaseio.com",
+    "project_id": "smartmicroscope-c3a92",
+    "storage_bucket": "smartmicroscope-c3a92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910022415819:android:c8da1a892658474981124e",
+        "android_client_info": {
+          "package_name": "com.example.android.SmartMicroscope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910022415819-o1sclrb34vk3hgvhjuivh8kjn1on8b7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.SmartMicroscope",
+            "certificate_hash": "03ff2a02b05c20722c07544449f866c3cb7bce5b"
+          }
+        },
+        {
+          "client_id": "910022415819-tv7rclbpkj1q1mgucs0cds46keqbgmul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvmyKVprRdwAuPFR24O0EWOpoJu2jez4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910022415819-tv7rclbpkj1q1mgucs0cds46keqbgmul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharedpreferencesscreen"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared preferences"
+            android:textSize="@dimen/text_sz_scale_type"
+            android:padding="@dimen/text_sz_scale_type">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/modelfile"
+        android:layout_below="@+id/title"
+        android:padding="@dimen/text_sz_scale_type">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose model location"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="No model selected"
+                android:paddingRight="30dp"
+                android:id="@+id/selected_model">
+            </TextView>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:id="@+id/button_selectmodel">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/labelfile"
+        android:layout_below="@+id/modelfile"
+        android:padding="@dimen/text_sz_scale_type">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose label location"
+                android:paddingRight="30dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="No label selected"
+                android:paddingRight="30dp"
+                android:id="@+id/selected_label">
+            </TextView>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:id="@+id/button_selectlabel">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/downloadModels"
+        android:layout_below="@+id/labelfile"
+        android:padding="@dimen/text_sz_scale_type">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download models"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open model zoo"
+            android:id="@+id/button_openmodelzoo">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/stepstoscan"
+        android:layout_below="@+id/downloadModels"
+        android:padding="@dimen/text_sz_scale_type">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of steps to scan"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter number"
+            android:id="@+id/stepstoscan_edittext"
+            android:inputType="number">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imagestocaptureperscan"
+        android:layout_below="@+id/stepstoscan"
+        android:padding="@dimen/text_sz_scale_type">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of images per scan"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter number"
+            android:id="@+id/imagestocaptureperscan_edittext"
+            android:inputType="number">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_button_resetDefaults"
+        android:layout_below="@+id/imagestocaptureperscan"
+        android:padding="@dimen/text_sz_scale_type">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset to default"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/button_resetDefaults"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/layout_autofocus_everyx"
+        android:layout_below="@+id/layout_button_resetDefaults"
+        android:padding="@dimen/text_sz_scale_type">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autofocus every x images"
+            android:paddingRight="30dp"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter number"
+            android:id="@+id/imagestocaptureperautofocus"
+            android:inputType="number">
+        </EditText>
+
+    </LinearLayout>
+
+</RelativeLayout>

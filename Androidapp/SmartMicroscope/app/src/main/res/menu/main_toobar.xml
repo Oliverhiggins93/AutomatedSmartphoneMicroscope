@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/menu_takepic"
+      android:title="Capture image"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_recording"
+      android:title="Record video"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_focus"
+      android:title="Autofocus"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_resolution"
+      android:title="Change Resolution"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_bluetooth"
+      android:title="Connect to Bluetooth"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_background"
+      android:title="Capture background image"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_zerolocation"
+      android:title="Set location as origin"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_gotozero"
+      android:title="Go to origin"
+      app:showAsAction="never" />
+</menu>

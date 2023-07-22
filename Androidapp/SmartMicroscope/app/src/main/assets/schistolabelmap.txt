@@ -1,0 +1,6 @@
+s.mansoni_egg
+taenia
+hookworm
+hymenolepis
+ascaris
+trichuris

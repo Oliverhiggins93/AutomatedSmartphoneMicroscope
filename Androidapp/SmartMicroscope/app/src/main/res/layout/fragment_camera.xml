@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+    <com.example.android.SmartMicroscope.AutoFitTextureView
+        android:id="@+id/camera2_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_camera_captureconnect"
+        android:layout_below="@id/camera2_preview"
+        >
+    <Button
+        android:id="@+id/button_capture_cam"
+        android:text="Capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"        />
+    <Button
+        android:id="@+id/button_connect_cam"
+        android:text="Connect Serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/button_stop_cam"
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_right_cam"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/OtherCamera"
+            android:text="Change Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_set_sample_number"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout_camera_captureconnect"
+        android:id="@+id/linearlayout_camera_forwardbackward"
+        android:gravity="center">
+        <Button
+            android:id="@+id/button_left_cam"
+            android:text="Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_backward_cam"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout_camera_leftright"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_forward_cam"
+                android:text="Forward"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_connect_cam"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/button_backward_cam"
+                android:text="Backward"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_forward_cam"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_right_cam"
+            android:text="Right"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_left_cam"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout_camera_focus"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_focusplus_cam"
+                android:text="Focus +"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/button_focusminus_cam"
+                android:text="Focus -"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearlayout_camera_forwardbackward"
+        android:id="@+id/linearlayout_camera_text"
+        android:layout_alignParentBottom="true">
+    <TextView
+        android:text="SampleNumber: "
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/cardview_light_background"
+        android:id="@+id/textView_sampleNum"
+        />
+        <Button
+            android:id="@+id/button_scan_cam"
+            android:text="Scan"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

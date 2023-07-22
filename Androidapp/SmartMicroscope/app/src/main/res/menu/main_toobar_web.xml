@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/menu_resolution_capture"
+      android:title="Capture resolution"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_resolution_preview"
+      android:title="Preview resolution"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_exposure_on"
+      android:title="Auto exposure on"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_exposure_off"
+      android:title="Auto exposure off"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_awb_on"
+      android:title="AWB on"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_awb_off"
+      android:title="AWB off"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_zerolocation"
+      android:title="Set location as origin"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_gotozero"
+      android:title="Go to origin"
+      app:showAsAction="never" />
+</menu>
